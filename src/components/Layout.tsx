@@ -17,7 +17,7 @@ export function Layout({ children }: LayoutProps) {
                 whileTap={{ scale: 0.95 }}
                 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600"
               >
-                UCC Wallet
+                Orise Wallet
               </motion.div>
             </div>
           </nav>
