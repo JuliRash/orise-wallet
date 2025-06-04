@@ -3,10 +3,10 @@
  */
 
 // Base URLs for the blockchain APIs
-export const REST_API_URL = 'http://145.223.80.193:1317';
-export const RPC_API_URL = 'http://145.223.80.193:26657';
-export const DENOM = 'atucc';
-export const DISPLAY_DENOM = 'UCC';
+export const REST_API_URL = 'http://153.92.210.96:1317';
+export const RPC_API_URL = 'http://153.92.210.96:26657';
+export const DENOM = 'aoai';
+export const DISPLAY_DENOM = 'OAI';
 
 /**
  * Utility function to make fetch requests with CORS headers
