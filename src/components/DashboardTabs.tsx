@@ -12,7 +12,7 @@ const DashboardTabs = ({ uccBalance }:{ uccBalance: string }) => {
   
   const tokens: Token[] = [
     {
-      name: "ucc",
+      name: "OAI",
       icon: "/logo.png",
       value: uccBalance
     }

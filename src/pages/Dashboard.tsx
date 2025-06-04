@@ -345,7 +345,7 @@ export default function Dashboard() {
                             maximumFractionDigits: 6
                           })}
                         </span>
-                        <span className="text-xl text-gray-400">UCC</span>
+                        <span className="text-xl text-gray-400">OAI</span>
                       </>
                     )}
                   </div>
@@ -410,7 +410,7 @@ export default function Dashboard() {
                 <h2 className="text-xl font-semibold">Wallet Addresses</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <label className="text-sm text-gray-400">UCC Address</label>
+                    <label className="text-sm text-gray-400">OAI Address</label>
                     <div className="flex items-center gap-2 bg-gray-800/50 p-3 rounded-lg group cursor-pointer" onClick={() => {
                       navigator.clipboard.writeText(walletInfo.cosmosAddress);
                       toast.success('Address copied to clipboard!');
