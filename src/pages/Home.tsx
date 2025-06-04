@@ -51,7 +51,7 @@ export default function Home() {
               </motion.div>
               
               <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Welcome to UCC Wallet
+                Welcome to Orise Wallet
               </h1>
               <p className="text-gray-400 text-lg">
                 Connect with MetaMask to access your Universe Chain wallet

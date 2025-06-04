@@ -301,7 +301,7 @@ export default function Dashboard() {
           {/* Header Section */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
-              <h1 className="text-3xl font-bold text-gradient">UCC Wallet</h1>
+              <h1 className="text-3xl font-bold text-gradient">Orise Wallet</h1>
               <p className="text-gray-400 mt-1">Your Universe Chain Gateway</p>
             </div>
             <Button variant="secondary" onClick={handleDisconnect}>

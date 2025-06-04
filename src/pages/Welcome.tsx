@@ -33,7 +33,7 @@ export default function Welcome() {
         >
           <motion.div variants={item}>
             <h1 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
-              Welcome to UCC Wallet
+              Welcome to Orise Wallet
             </h1>
             <p className="mt-4 text-gray-400">
               Your gateway to the Universe Chain ecosystem. Secure, simple, and powerful.
