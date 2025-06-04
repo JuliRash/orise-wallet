@@ -56,8 +56,8 @@ const ERC20_ABI = [
 ];
 
 export class UCCWallet {
-  private chainId = 'universe_9000-1';
-  private chainName = 'Universe Chain Mainnet';
+  private chainId = 'orise_9001-1';
+  private chainName = 'Orise Mainnet';
   private rpcUrl = RPC_API_URL;
   private provider: ethers.providers.Web3Provider | null = null;
   private rpcProvider: ethers.providers.JsonRpcProvider;
