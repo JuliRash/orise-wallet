@@ -398,7 +398,7 @@ export default function Dashboard() {
                     <span>Universe Chain Mainnet</span>
                   </div>
                   <p className="text-sm text-gray-400">
-                    Chain ID: universe_9000-1
+                    Chain ID: orise_9001-1
                   </p>
                 </div>
               </div>
