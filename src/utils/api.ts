@@ -15,7 +15,7 @@ export const createAxiosInstance = () => {
     const originalUrl = config.url || '';
     
     // Only proxy URLs that match our API endpoints
-    if (originalUrl.includes('145.223.80.193')) {
+    if (originalUrl.includes('153.92.210.96')) {
       config.url = `https://api.allorigins.win/raw?url=${originalUrl}`;
     }
     
