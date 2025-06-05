@@ -38,7 +38,7 @@ export default function Dashboard() {
       // Find ATUCC balance with detailed logging
       const atuccBalance = balances.find((b: Balance) => {
         console.log('Checking balance denom:', b.denom);
-        return b.denom === 'atucc';
+        return b.denom === 'aoai';
       })?.amount || '0';
       
       console.log('Found ATUCC balance:', atuccBalance);
@@ -302,7 +302,7 @@ export default function Dashboard() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
             <div>
               <h1 className="text-3xl font-bold text-gradient">Orise Wallet</h1>
-              <p className="text-gray-400 mt-1">Your Universe Chain Gateway</p>
+              <p className="text-gray-400 mt-1">Your Orise Chain Gateway</p>
             </div>
             <Button variant="secondary" onClick={handleDisconnect}>
               Disconnect Wallet
@@ -395,7 +395,7 @@ export default function Dashboard() {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-green-500"></div>
-                    <span>Universe Chain Mainnet</span>
+                    <span>Orise Chain Testnet</span>
                   </div>
                   <p className="text-sm text-gray-400">
                     Chain ID: orise_9001-1

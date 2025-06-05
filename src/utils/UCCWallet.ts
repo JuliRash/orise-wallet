@@ -435,11 +435,11 @@ export class UCCWallet {
           await window.ethereum.request({
             method: 'wallet_addEthereumChain',
             params: [{
-              chainId: '0x2328', // Chain ID 9000
-              chainName: 'Universe Chain',
+              chainId: '0x2329', // Chain ID 9000
+              chainName: 'Orise Chain',
               nativeCurrency: {
-                name: 'UCC',
-                symbol: 'UCC',
+                name: 'OAI',
+                symbol: 'OAI',
                 decimals: 18
               },
               rpcUrls: [this.rpcUrl],
@@ -479,7 +479,7 @@ export class UCCWallet {
   private ethToUcc(ethAddress: string): string {
     const addressBuffer = Buffer.from(ethAddress.slice(2), 'hex');
     const words = bech32.toWords(addressBuffer);
-    return bech32.encode('ucc', words);
+    return bech32.encode('oai', words);
   }
 
   // Convert UCC address to ETH
@@ -510,7 +510,7 @@ export class UCCWallet {
       
       // Convert the balance to our format
       return [{
-        denom: 'atucc',
+        denom: 'aoai',
         amount: balance.toString()
       }];
     } catch (error) {

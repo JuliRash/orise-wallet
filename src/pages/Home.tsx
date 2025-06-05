@@ -54,7 +54,7 @@ export default function Home() {
                 Welcome to Orise Wallet
               </h1>
               <p className="text-gray-400 text-lg">
-                Connect with MetaMask to access your Universe Chain wallet
+                Connect with MetaMask to access your Orise Chain wallet
               </p>
             </div>
 
