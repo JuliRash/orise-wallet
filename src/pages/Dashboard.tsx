@@ -221,6 +221,7 @@ export default function Dashboard() {
       if (wallet) {
         const info = await wallet.connectWallet();
         setWalletInfo(info);
+        console.log(info.cosmosAddress, 'amin');
         await fetchBalanceWithRetries(info.cosmosAddress);
       }
     }

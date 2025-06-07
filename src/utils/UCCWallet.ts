@@ -480,7 +480,7 @@ export class UCCWallet {
   private ethToUcc(ethAddress: string): string {
     const addressBuffer = Buffer.from(ethAddress.slice(2), 'hex');
     const words = bech32.toWords(addressBuffer);
-    return bech32.encode('oai', words);
+    return bech32.encode('orise', words);
   }
 
   // Convert UCC address to ETH
