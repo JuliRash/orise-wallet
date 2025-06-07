@@ -371,7 +371,7 @@ export class UCCWallet {
 
       // Convert UCC address to ETH address if needed
       let ethRecipient = recipientAddress;
-      if (recipientAddress.startsWith('ucc')) {
+      if (recipientAddress.startsWith('oai')) {
         ethRecipient = this.uccToEth(recipientAddress);
       } else if (!recipientAddress.startsWith('0x')) {
         throw new Error('Invalid address format. Please provide a UCC or ETH address');
@@ -427,7 +427,7 @@ export class UCCWallet {
       try {
         await window.ethereum.request({
           method: 'wallet_switchEthereumChain',
-          params: [{ chainId: '0x2328' }], // Chain ID 9000
+          params: [{ chainId: '0x2329' }], // Chain ID 9001
         });
       } catch (switchError: unknown) {
         // This error code indicates that the chain has not been added to MetaMask
@@ -435,17 +435,18 @@ export class UCCWallet {
           await window.ethereum.request({
             method: 'wallet_addEthereumChain',
             params: [{
-              chainId: '0x2329', // Chain ID 9000
+              chainId: '0x2329', // 9001 in decimal
               chainName: 'Orise Chain',
               nativeCurrency: {
                 name: 'OAI',
                 symbol: 'OAI',
                 decimals: 18
               },
-              rpcUrls: [this.rpcUrl],
-              blockExplorerUrls: [''] // Add block explorer URL if available
+              rpcUrls: [this.rpcUrl], // ✅ must be HTTPS
+              blockExplorerUrls: [] // ✅ leave empty or provide valid HTTPS
             }]
           });
+
         } else {
           throw switchError;
         }
@@ -532,7 +533,7 @@ export class UCCWallet {
       
       // Convert UCC address to ETH address if needed
       let ethRecipient = recipientAddress;
-      if (recipientAddress.startsWith('ucc')) {
+      if (recipientAddress.startsWith('oai')) {
         try {
           ethRecipient = this.uccToEth(recipientAddress);
           console.log('Converted UCC address to ETH address:', ethRecipient);

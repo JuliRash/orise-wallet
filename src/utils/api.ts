@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // Base URLs for the blockchain APIs
-export const REST_API_URL = '153.92.210.96:1317';
-export const RPC_API_URL = 'http://153.92.210.96:26657';
+export const REST_API_URL = 'https://tendermint.orisescan.com'; // cosmos
+export const RPC_API_URL = "https://tendermint.orisescan.com"; // tendermint
 
 /**
  * Creates an axios instance with CORS proxy configuration

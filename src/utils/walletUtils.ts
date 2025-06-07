@@ -27,7 +27,7 @@ export const walletUtils = {
     
     // Create Cosmos wallet with Ethereum-compatible HD path
     const cosmosWallet = await DirectSecp256k1HdWallet.fromMnemonic(mnemonic, {
-      prefix: 'UCC',
+      prefix: 'OAI',
       hdPaths: [ethereumPath]
     });
     const [cosmosAccount] = await cosmosWallet.getAccounts();
@@ -68,7 +68,7 @@ export const walletUtils = {
   ethToUccAddress: (ethAddress: string): string => {
     const addressBuffer = Buffer.from(ethAddress.slice(2), 'hex');
     const words = bech32.toWords(addressBuffer);
-    return bech32.encode('ucc', words);
+    return bech32.encode('oai', words);
   },
 
   // Convert UCC address to Ethereum address
