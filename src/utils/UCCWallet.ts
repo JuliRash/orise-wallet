@@ -371,10 +371,10 @@ export class UCCWallet {
 
       // Convert UCC address to ETH address if needed
       let ethRecipient = recipientAddress;
-      if (recipientAddress.startsWith('oai')) {
+      if (recipientAddress.startsWith('orise')) {
         ethRecipient = this.uccToEth(recipientAddress);
       } else if (!recipientAddress.startsWith('0x')) {
-        throw new Error('Invalid address format. Please provide a UCC or ETH address');
+        throw new Error('Invalid address format. Please provide a Orise or ETH address');
       }
 
       const signer = await this.getSigner();
@@ -533,7 +533,7 @@ export class UCCWallet {
       
       // Convert UCC address to ETH address if needed
       let ethRecipient = recipientAddress;
-      if (recipientAddress.startsWith('oai')) {
+      if (recipientAddress.startsWith('orise')) {
         try {
           ethRecipient = this.uccToEth(recipientAddress);
           console.log('Converted UCC address to ETH address:', ethRecipient);

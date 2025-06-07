@@ -92,7 +92,7 @@ export function SendTokenModal({ isOpen, onClose, onSend, isLoading }: SendToken
                   <Input
                     value={recipient}
                     onChange={(e) => setRecipient(e.target.value)}
-                    placeholder="Enter UCC or ETH address"
+                    placeholder="Enter Orise or ETH address"
                     disabled={isLoading}
                   />
                 </div>
@@ -112,11 +112,11 @@ export function SendTokenModal({ isOpen, onClose, onSend, isLoading }: SendToken
                       disabled={isLoading}
                     />
                     <div className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
-                      UCC
+                      OAI
                     </div>
                   </div>
                   <p className="text-sm text-gray-400 mt-1">
-                    Transaction fee: 0.01 UCC
+                    Transaction fee: 0.01 OAI
                   </p>
                 </div>
 
